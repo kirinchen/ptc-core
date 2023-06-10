@@ -1,12 +1,10 @@
 package com.domi.ptc_core.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.validation.constraints.NotNull;
+import jakarta.persistence.*;
 import lombok.Data;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.security.core.GrantedAuthority;
-
-import javax.persistence.*;
 
 import java.util.HashSet;
 
