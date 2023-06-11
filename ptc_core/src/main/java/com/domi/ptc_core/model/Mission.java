@@ -10,14 +10,14 @@ import lombok.Data;
 @Data
 @Entity
 @Table
-public class UserReward {
+public class Mission {
 
     @Id
     @Column(nullable = false)
     private String uid;
-
+    private String name;
+    private String activityUid;
     private Integer rewardId;
-    private Integer userId;
-    private double amount;
+    private double rewardAmount;
 
 }

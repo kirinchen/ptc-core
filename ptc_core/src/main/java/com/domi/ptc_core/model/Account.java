@@ -21,6 +21,7 @@ public class Account implements org.springframework.security.core.userdetails.Us
 	private String username;
 	@Column(nullable = false, unique = true)
 	private String email;
+	private int userId;
 	@Column(nullable = false)
 	@JsonIgnore
 	private String password;

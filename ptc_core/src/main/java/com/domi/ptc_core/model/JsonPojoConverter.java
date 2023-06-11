@@ -5,9 +5,9 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.util.StdDateFormat;
+import jakarta.persistence.AttributeConverter;
 import org.apache.commons.lang3.StringUtils;
 
-import javax.persistence.AttributeConverter;
 
 public abstract class JsonPojoConverter<T> implements AttributeConverter<T, String> {
 
