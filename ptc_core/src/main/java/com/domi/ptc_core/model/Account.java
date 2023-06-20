@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.springframework.security.core.GrantedAuthority;
+//import org.springframework.security.core.GrantedAuthority;
 
 import java.util.HashSet;
 
@@ -12,7 +12,7 @@ import java.util.HashSet;
 @Data
 @Entity
 @Table
-public class Account implements org.springframework.security.core.userdetails.UserDetails {
+public class Account /*implements org.springframework.security.core.userdetails.UserDetails*/ {
 
 	@Id
 	@Column(nullable = false)
@@ -67,10 +67,9 @@ public class Account implements org.springframework.security.core.userdetails.Us
 		}
 	}
 
-	public static enum Authority implements GrantedAuthority {
+	public static enum Authority /*implements GrantedAuthority*/ {
 		Admin;
 
-		@Override
 		public String getAuthority() {
 			return this.toString();
 		}
